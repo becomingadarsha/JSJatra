@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <style>
+        .container {
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 18px;
+        }
+
+        ul {
+            display: table;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        .about{
+            font-weight: bold;
+            color: rgb(20, 55, 104);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Module 8</h1>
+        <h2>ES6 - The Practical Javascript</h2>
+
+        <ul>
+            <li>
+                <div class="about">.map Method</div> 
+                arrname = [1,2,3,4,5]; <br>
+
+                arrname.map(function(num){
+                return num*2;
+                })
+            </li>
+
+            <li>
+                <div class="about">Spread Operator: </div>
+                let numbers = [1,2,3,4];<br>
+                let completeNumbers = [...numbers ,5,6,7,8]
+                <br>
+                let obj1 = { }<br>
+                let newobj = {
+                ...obj
+                }
+            </li>
+
+            <li>
+                <div class="about">Destructing Array: </div>is used to unpack values from array <br>
+                let user =[1,2,3,4] <br>
+                let [a,b,c] = user;
+                => This assigns value to particular variables
+                <br>
+            </li>
+
+            <li>
+               <div class="about">Destructing Object</div>
+               Same as destructing array
+            </li>
+
+            <li>
+                <div class="about">Template String :</div> 'string ${varname} string contd ...'
+            </li>
+
+            <li>
+               <div class="about">Arrow functions: </div> 
+                let add = (a,b) => {return a * b}
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="challenge.js"></script>
+</body>
+
+</html>
